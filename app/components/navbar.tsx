@@ -12,14 +12,9 @@ const roadRage = Road_Rage({
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleHomeClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    setMenuOpen(false);
-  };
-
   return (
     <nav className="sticky h-14 top-0 left-0 w-full z-50 flex justify-between items-center pr-6 pl-4 py-1 bg-[#1B0D00] text-white">
-      <Link href="/"><div className="flex items-center gap-1" onClick={handleHomeClick}>
+      <Link href="/"><div className="flex items-center gap-1">
         <img src="/mascot.png" alt="openCSE" className="w-8 h-11 pt-0.5" />
         {/* <img src="/logo.png" alt="openCSE" className="w-38 h-17" /> */}
         <span
@@ -43,9 +38,9 @@ export default function Navbar() {
         }}
       >
         <li>
-          <button onClick={handleHomeClick} className="hover:opacity-80 transition-opacity">
+          <Link href="/" className="hover:opacity-80 transition-opacity">
             HOME
-          </button>
+          </Link>
         </li>
         <li>
           <Link href="/#subjects">SUBJECTS</Link>
@@ -99,22 +94,22 @@ export default function Navbar() {
           }}
         >
           <li>
-            <button onClick={handleHomeClick} className="hover:opacity-80 transition-opacity">
+            <Link href="/" onClick={() => setMenuOpen(false)} className="hover:opacity-80 transition-opacity">
         HOME
-            </button>
+            </Link>
           </li>
           <li>
-            <Link href="#subjects" onClick={() => setMenuOpen(false)}>
+            <Link href="/#subjects" onClick={() => setMenuOpen(false)}>
         SUBJECTS
             </Link>
           </li>
           <li>
-            <Link href="#contribute" onClick={() => setMenuOpen(false)}>
+            <Link href="/#contribute" onClick={() => setMenuOpen(false)}>
         CONTRIBUTE
             </Link>
           </li>
           <li>
-            <Link href="#sponsor" onClick={() => setMenuOpen(false)}>
+            <Link href="/#sponsor" onClick={() => setMenuOpen(false)}>
         SPONSOR
             </Link>
           </li>

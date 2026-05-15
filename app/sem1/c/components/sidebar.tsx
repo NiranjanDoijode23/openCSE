@@ -2,7 +2,7 @@
 import { Righteous } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const righteous = Righteous({
   subsets: ["latin"],
@@ -13,6 +13,12 @@ const righteous = Righteous({
 export default function Sidebar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth >= 768) {
+      setOpen(true);
+    }
+  }, []);
 
   const chapters = [
     { id: "ch0", title: "Course Outline" },
