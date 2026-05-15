@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Ch0Content } from "../content/chapter0";
 import { Ch1Content } from "../content/chapter1";
 import { Ch2Content } from "../content/chapter2";
-// import { Ch3Content } from "../content/chapter3";
+import { Ch3Content } from "../content/chapter3";
 // import { Ch4Content } from "../content/chapter4";
 // import { Ch5Content } from "../content/chapter5";
 // import { Ch6Content } from "../content/chapter6";
@@ -34,11 +34,11 @@ const chapters = [
     component: Ch2Content,
   },
 
-  // {
-  //   id: "ch3",
-  //   title: "CPU Scheduling",
-  //   component: Ch3Content,
-  // },
+  {
+    id: "ch3",
+    title: "CPU Scheduling",
+    component: Ch3Content,
+  },
 
   // {
   //   id: "ch4",

@@ -18,7 +18,7 @@ export default function Sidebar() {
     { id: "ch0", title: "Course Outline" },
     { id: "ch1", title: "Introduction to Operating Systems" },
     { id: "ch2", title: "Process Management" },
-    // { id: "ch3", title: "CPU Scheduling" },
+    { id: "ch3", title: "CPU Scheduling" },
     // { id: "ch4", title: "Process Synchronization" },
     // { id: "ch5", title: "Deadlocks" },
     // { id: "ch6", title: "Memory Management" },
