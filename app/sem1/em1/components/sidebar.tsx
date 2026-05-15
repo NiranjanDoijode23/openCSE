@@ -26,7 +26,11 @@ export default function Sidebar() {
     // Map your subject path prefix → quiz slug
     // Adjust the key to match whatever segment identifies the subject in the URL
     const quizSlugMap: Record<string, string> = {
-      c: "c-programming", // /quiz/c-programming
+      c: "c-programming",
+      em1: "em1",
+      ep: "ep",
+      em2: "em2",
+      oops: "oops",
     };
 
     // Derive subject from pathname, e.g. /sem1/c/ch2 → "c"
