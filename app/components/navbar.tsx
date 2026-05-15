@@ -49,6 +49,9 @@ export default function Navbar() {
         <li>
           <Link href="/#sponsor">SPONSOR</Link>
         </li>
+        <li>
+          <Link href="/quiz">QUIZ</Link>
+        </li>
       </ul>
       {/* Mobile Hamburger */}
       <button
@@ -104,6 +107,11 @@ export default function Navbar() {
             <li>
               <Link href="#sponsor" onClick={() => setMenuOpen(false)}>
           SPONSOR
+              </Link>
+            </li>
+            <li>
+              <Link href="/quiz" onClick={() => setMenuOpen(false)}>
+          QUIZ
               </Link>
             </li>
           </ul>
