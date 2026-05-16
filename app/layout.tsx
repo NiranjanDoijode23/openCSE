@@ -4,6 +4,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Footer from "./components/footer";
+// 1. Import our smart component
+import ProgressBar from "./components/ProgressBar"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,10 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* centralize body classes here */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-[#1B0D00] text-[#FAE8D7]`}
       >
+        {/* 2. Drop it in right above the main flex container */}
+        <ProgressBar />
+        
         <div className="flex-1">
           {children}
         </div>
