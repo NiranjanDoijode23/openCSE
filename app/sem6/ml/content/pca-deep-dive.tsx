@@ -9,10 +9,10 @@ export const PCADeepDiveContent = () => (
       <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f] my-6">
         <h4 className="font-bold text-lg mb-2">Step-by-Step Algorithm</h4>
         <ol className="list-decimal pl-5 space-y-2 text-sm">
-          <li><strong>Standardization:</strong> Scale the data so each feature has mean=0 and variance=1. This ensures that features with larger ranges don't dominate the variance.</li>
+          <li><strong>Standardization:</strong> Scale the data so each feature has mean=0 and variance=1. This ensures that features with larger ranges don&apos;t dominate the variance.</li>
           <li><strong>Covariance Matrix:</strong> Calculate how each feature varies with every other feature.</li>
           <li><strong>Eigen-Decomposition:</strong> Compute <em>Eigenvalues</em> (magnitude of variance) and <em>Eigenvectors</em> (directions of variance).</li>
-          <li><strong>Sorting:</strong> Rank the eigenvectors by their corresponding eigenvalues in descending order. The first eigenvector is the "Principal Component 1" (PC1).</li>
+          <li><strong>Sorting:</strong> Rank the eigenvectors by their corresponding eigenvalues in descending order. The first eigenvector is the &quot;Principal Component 1&quot; (PC1).</li>
           <li><strong>Projection:</strong> Multiply the original data by the top k eigenvectors to transform it into the new k-dimensional space.</li>
         </ol>
       </div>
@@ -26,7 +26,7 @@ export const PCADeepDiveContent = () => (
           PC1: 75% variance, PC2: 15% variance, PC3: 5% variance ...
         </div>
         <p className="text-sm">
-          We look for the "elbow" in the plot where the variance drop levels off. Typically, we aim to retain enough components to explain <strong>90-95%</strong> of the total variance.
+          We look for the &quot;elbow&quot; in the plot where the variance drop levels off. Typically, we aim to retain enough components to explain <strong>90-95%</strong> of the total variance.
         </p>
       </div>
 

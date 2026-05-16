@@ -29,10 +29,10 @@ export const AdvancedDimReductionContent = () => (
           <ul className="list-disc pl-5 text-sm space-y-2">
             <li><strong>Pairwise Similarities:</strong> It converts Euclidean distances between high-dimensional data points into joint probabilities that represent similarities.</li>
             <li><strong>KL Divergence:</strong> It optimizes the low-dimensional embedding by minimizing the Kullback-Leibler (KL) divergence between the high-dimensional and low-dimensional probability distributions.</li>
-            <li><strong>Crowding Problem:</strong> It uses a Student t-distribution in the low-dimensional space to solve the "crowding problem," allowing for better cluster separation in visualization.</li>
+            <li><strong>Crowding Problem:</strong> It uses a Student t-distribution in the low-dimensional space to solve the &quot;crowding problem&quot;, allowing for better cluster separation in visualization.</li>
           </ul>
           <div className="note-box mt-3 text-xs bg-white/50 p-2 rounded">
-            <span className="font-bold text-red-800">Note:</span> t-SNE is primarily for visualization and exploration; it is not typically used for feature engineering or general preprocessing as it doesn't preserve global structure well.
+            <span className="font-bold text-red-800">Note:</span> t-SNE is primarily for visualization and exploration; it is not typically used for feature engineering or general preprocessing as it doesn&apos;t preserve global structure well.
           </div>
         </div>
 

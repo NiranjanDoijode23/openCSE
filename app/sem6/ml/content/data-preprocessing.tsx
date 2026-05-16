@@ -30,9 +30,9 @@ export const DataPreprocessingContent = () => (
           <div className="p-4 pt-0 text-[#3a2a14] bg-[#f3e7c2]/30">
             <p className="text-sm mb-3">Converts data into an appropriate scale or format for models.</p>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li><strong>Normalization (Min-Max Scaling):</strong> Scales data to a <span className="font-mono">[0, 1]</span> range.<br /><span className="font-mono text-xs bg-white/40 px-1 rounded">x' = (x - min) / (max - min)</span></li>
-              <li><strong>Standardization (Z-Score):</strong> Scales data to have zero mean (<span className="font-mono">μ=0</span>) and unit variance (<span className="font-mono">σ=1</span>).<br /><span className="font-mono text-xs bg-white/40 px-1 rounded">x' = (x - μ) / σ</span></li>
-              <li><strong>Log Transformation:</strong> Reduces right-skewness in data.<br /><span className="font-mono text-xs bg-white/40 px-1 rounded">x' = log(1 + x)</span></li>
+              <li><strong>Normalization (Min-Max Scaling):</strong> Scales data to a <span className="font-mono">[0, 1]</span> range.<br /><span className="font-mono text-xs bg-white/40 px-1 rounded">x&apos; = (x - min) / (max - min)</span></li>
+              <li><strong>Standardization (Z-Score):</strong> Scales data to have zero mean (<span className="font-mono">μ=0</span>) and unit variance (<span className="font-mono">σ=1</span>).<br /><span className="font-mono text-xs bg-white/40 px-1 rounded">x&apos; = (x - μ) / σ</span></li>
+              <li><strong>Log Transformation:</strong> Reduces right-skewness in data.<br /><span className="font-mono text-xs bg-white/40 px-1 rounded">x&apos; = log(1 + x)</span></li>
             </ul>
           </div>
         </details>

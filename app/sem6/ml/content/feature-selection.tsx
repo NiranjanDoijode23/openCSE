@@ -31,7 +31,7 @@ export const FeatureSelectionContent = () => (
             <span className="group-open:rotate-180 transition-transform text-sm opacity-50 text-[#2b1d0f]">▼</span>
           </summary>
           <div className="p-4 pt-0 text-[#3a2a14] bg-[#f3e7c2]/30">
-            <p className="text-sm mb-3">Use a specific machine learning algorithm as a "black box" to evaluate feature subsets. They search through combinations of features and use model performance (e.g., accuracy) to pick the best subset.</p>
+            <p className="text-sm mb-3">Use a specific machine learning algorithm as a &quot;black box&quot; to evaluate feature subsets. They search through combinations of features and use model performance (e.g., accuracy) to pick the best subset.</p>
             <div className="space-y-3">
               <div className="bg-white/40 p-2 rounded">
                 <p className="font-bold text-sm">Forward Selection:</p>
