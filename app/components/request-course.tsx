@@ -1,11 +1,11 @@
 export default function RequestCourse() {
   return (
     <section className="py-16 px-6 text-center">
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-4xl font-bold">
         Can't find a course?
       </h2>
 
-      <p className="mt-4 text-gray-400">
+      <p className="mt-5 text-gray-400">
         Request a new course/topic through GitHub.
       </p>
 
