@@ -10,7 +10,7 @@ export default function RequestCourse() {
       </p>
 
       <a
-        href="https://github.com/safwanshk11/opencse-safwan/issues/new?template=course_request.md"
+        href="https://github.com/safwanshk11/opencse-safwan/issues/new?template=bug_report.md"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block mt-6 px-6 py-3 rounded-lg bg-white text-black font-semibold hover:opacity-80 transition"
