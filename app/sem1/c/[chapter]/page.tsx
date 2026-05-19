@@ -50,6 +50,7 @@ export default function ChapterPage({ params }: ChapterProps) {
     ch3: "c-data-types",
     ch4: "c-arrays-functions",
     ch5: "c-pointers-structures",
+    ch6: "c-file-memory-preprocessors",
   };
 
   const chapterQuiz = moduleQuizzes.find((quiz) => quiz.slug === chapterQuizSlugMap[params.chapter]);
