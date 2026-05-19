@@ -3,6 +3,7 @@ import { Righteous } from "next/font/google";
 
 import { Ch0Content } from "../content/chapter0";
 import { Ch1Content } from "../content/chapter1";
+import { Ch2Content } from "../content/chapter2";
 
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 import { moduleQuizzes } from "@/lib/quizData";
@@ -17,6 +18,7 @@ const righteous = Righteous({
 const chapters = [
   { id: "ch0", title: "Course Outline", component: Ch0Content },
   { id: "ch1", title: "Arrays", component: Ch1Content },
+  { id: "ch2", title: "Linked Lists", component: Ch2Content },
 ];
 
 type ChapterProps = {
@@ -42,7 +44,7 @@ export default function ChapterPage({ params }: ChapterProps) {
   const chapterQuiz = moduleQuizzes.find((quiz) => quiz.slug === chapterQuizSlugMap[params.chapter]);
 
   return (
-    <div className="flex flex-col bg-[#1B0D00] min-h-full p-2 pt-6 text-[#e2d1c1]">
+    <div className="flex flex-col bg-[#1B0D00] min-h-full p-2 pt-16 text-[#e2d1c1]">
 
       <div className="flex-1">
         <h1 className={`text-4xl font-bold ${righteous.className} mb-2`}>

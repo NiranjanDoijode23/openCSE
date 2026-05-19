@@ -23,9 +23,12 @@ export const Ch0Content = () => {
       <section>
         <h3 className="section-heading">Module II: Linked Lists</h3>
         <ul className="section-list">
-          <li>Singly linked lists</li>
-          <li>Doubly linked lists</li>
-          <li>Circular linked lists</li>
+          <li>Introduction and need for linked lists</li>
+          <li>Memory representation and node structure</li>
+          <li>Singly, doubly and circular linked lists</li>
+          <li>Linked list operations (traversal, searching, insertion, deletion)</li>
+          <li>Complexity analysis</li>
+          <li>Applications, advantages and limitations</li>
         </ul>
       </section>
 
