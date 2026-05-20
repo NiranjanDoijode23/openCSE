@@ -25,12 +25,14 @@ const chapters = [
 ];
 
 type ChapterProps = {
-  params: { chapter: string };
+  params: Promise<{ chapter: string }>;
 };
-
-export default function ChapterPage({ params }: ChapterProps) {
-  const currentIndex = chapters.findIndex((c) => c.id === params.chapter);
-  const chapter = chapters[currentIndex];
+export default async function ChapterPage({ params }: ChapterProps) {
+  // We rename it to 'chapterId' here!
+  const { chapter: chapterId } = await params; 
+  
+  const currentIndex = chapters.findIndex((c) => c.id === chapterId);
+  const chapter = chapters[currentIndex]; // Now this is perfectly safe!
 
   if (!chapter) {
     return <h1 className="text-2xl font-bold">Chapter not found</h1>;
