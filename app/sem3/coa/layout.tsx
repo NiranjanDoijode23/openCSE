@@ -3,8 +3,8 @@ import Navbar from "../../components/navbar";
 import Sidebar from "./components/sidebar";
 
 export const metadata = {
-  title: "C Programming | openCSE",
-  description: "Free and Open Documentations for Programming in C Language",
+  title: "Computer Organization and Architecture | openCSE",
+  description: "Free and Open Documentations for Computer Organization and Architecture",
 };
 
 export default function Sem3COALayout({ children }: { children: React.ReactNode }) {
